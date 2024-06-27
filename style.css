@@ -1,104 +1,161 @@
-.container{
-    font-family:sans-serif;
-}
-.logo{
-    width:120px;
-    height:100px;
-}
-.logo-1{
-    font-size:25px;
-    font-weight:bold;
-    text-transform:uppercase;
-    color:rgb(252, 251, 249)
+*{
+    padding:0;
+    margin:0 auto;
+    font-family: "Platypi", serif;
+    background-color: #F2F6CB;
+    box-sizing:border-box;
 }
 header{
     display:flex;
-    align-items:center;
-    justify-content:flex-start;
-    background-color:rgb(246, 71, 7);
-}
-nav{
-    display:flex;
-    font-size:20px;
-    align-self:stretch;
-    align-items:center;
-    gap:115px;
-    margin-left:30px;
-}
-a:link{
-    color:white;
-    text-decoration: none;
-    font-weight:bold;
-}
-a:visited{
-    color:white;
-    text-decoration: none;
-    font-weight:bold;
-}
-a:hover{
-background-color:white;
-color:black;
-text-decoration: none;
-font-weight:bold;
-}
-.background{
-    width:100%;
-    height:550px;
-    position:relative;
-}
-.information{
-    position:absolute;
-    top:50%;
-    left:35%;
-    right:10%;
-    font-size:50px;
-    color:rgb(253, 252, 251);
-    font-weight:bold;
-}
-.information-1{
-    position:absolute;
-    top:60%;
-    left:5%;
-    right:5%;
-    font-size:50px;
-    color:rgb(253, 252, 251);
-    font-weight:bold;
-}
-.chat-box{
-    background-color: rgb(227, 6, 6);
-    color:white;
-    font-weight:bold;
-    border-radius:40px 40px;
+    margin:10px 30px;
     font-size:18px;
-    width:100px;
-    height:50px;
-    text-align: center;
-    padding-top: 20px;
-    position:absolute;
-    right:0;
-    bottom:0
+    gap:60px;
 }
-.categories{
-    font-weight:bold;
-    font-size:20px;
-}
-.categories-1{
-    width:300px;
-    height:200px;
-}
-.categories-1:hover{
-    transform:scale(1.2);
-}
-
-li{
-    list-style:none;
-}
-ul{
+.Logo{
     display:flex;
-    gap:100px;
-    text-align: center;
-    font-weight:bold;
+    gap:10px;
 }
-ul:hover{
-    cursor:pointer;
+.logo-txt{
+    margin-top:10px;
+    font-size:24px;
+    font-weight:800;
+    letter-spacing:2px;
+}
+.logo-img{
+    height:50px;
+}
+nav{ 
+    display:flex;
+    margin-left:45%;
+    gap:30px;
+}
+.head-1:link,
+.head-1:visited{
+color:grey;
+text-decoration:none;
+}
+.head-1:hover,
+.head-1:active{
+    font-weight:800;
+    text-shadow: 0 5px 5px rgb(0, 0, 0,0.1); 
+}
+.intro{
+    text-align:center;
+    font-size:28px;
+    color:#343a40;
+    margin:25px auto;
+    width:100%;
+}
+.intro h1{
+    font-size:55px;
+    color:#343a40;
+    letter-spacing:-0.4px;
+    margin-bottom:30px;
+}
+.intro p{
+    margin-bottom:20px;
+}
+.btn:link,
+.btn:visited{
+    background-color:#1971c2;
+    color:rgb(247, 245, 245);
+    text-decoration:none;
+    padding:10px 20px;
+}
+.btn:hover,
+.btn:active{
+    background-color:#1c7ed6;
+    color:rgb(247, 245, 245);
+    text-decoration:none;
+    padding:12px 22px;
+}
+.btn{
+    border-radius:5px 5px;
+    font-weight:300;
+    display:inline-block;
+    margin:30px 30px;
+    text-align: cente r;
+    font-size: 22px;
+}
+/*article style*/
+
+article{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    column-gap:50px;
+    margin:30px 45px;
+    font-size:23px;
+    line-height:1.5;
+    color:#2a2e33;
+    align-items:center;
+    justify-content: space-between;
+}
+article h2{
+    font-size:42px;
+    margin-bottom:40px;
+}
+.web-img{
+    width:600px;
+    height:400px;
+    border-radius:5px 5px;
+    box-shadow:0 10px 25px 0 rgb(0, 0, 0, 0.5);
+}
+/*5 grid col css*/
+
+.second-heading{
+    font-size:40px;
+    color:#2a2e33;
+    margin:100px 45px;
+    margin-bottom:60px;
+}
+.parts-img{
+    height:80px;
+    width:80px;
+    fill:#343a40;
+    justify-content: center;
+}
+.five-col{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    column-gap:5px;
+    margin:10px 45px;
+}
+.third-heading{
+    font-size:24px;
+    margin-top:10px;
+    margin-left:15px;
+}
+.feature-text{
+    font-size:18px;
+    text-align:left;
+    width:260px;
+    line-height:1.5;
+    margin-top:10px;
+    margin-left:15px;
+}
+.parts{
+    box-shadow: 0 10px 25px rgb(0, 0, 0, 0.3);
+}
+/*second-section css*/
+.shop-img{
+    width:600px;
+    height:400px;
+    border-radius:5px 5px;
+    box-shadow:0 10px 25px 0 rgb(0, 0, 0, 0.5);
+    margin-top:80px;
+}
+.section-2{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    column-gap:50px;
+    margin:30px 45px;
+    font-size:23px;
+    line-height:1.5;
+    color:#2a2e33;
+    align-items:center;
+    justify-content: space-between;
+}
+.second-sec h2{
+    font-size:42px;
+    margin-bottom:40px;
 }
